@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', 'Arial', 'Helvetica', sans-serif;
+	background-color: #fdfdfd;
+}
+
+
+/* Navbar*/
+.navbar {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar .navbar-nav {
+	margin-right: 25px;
+}
+
+.navbar .navbar-brand {
+	display: block;
+	padding: 25px 70px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+}
+
+.navbar .nav-link {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 10px 15px;
+	margin: 0 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.transform-nav{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 2px 2px #a3a390;
+	margin-top: -15px;
+	transition: 1s ease;
+
+}
+
+.transform-nav .navbar-brand h3{
+	color: rgb(24, 24, 24);
+}
+
+.transform-nav .navbar-nav .nav-link{
+	color: rgb(24, 24, 24);
+	text-align: center;
+}
+
+
+.navbar .nav-link:hover {
+	padding-bottom: 2px;
+	border-bottom: 2px solid rgb(182, 136, 136);
+}
+
+i.fa-arrow-down, i.fa-close {
+	color:#fff;
+}
+
+i.fa-arrow-down.grey,i.fa-close.grey{
+	color:grey;
+}
+
+@media only screen and (max-width: 766px){
+	nav {
+		background-color:rgb(151, 151, 151);
+	}
+}
+
+/* Slide images */
+.item-1, .item-2, .item-3 {
+  min-height: 30em;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+
+}
+
+.item-1 {
+  background: linear-gradient(rgba(85, 85, 85, 0.7), rgba(85, 85, 85, 0.7)), 
+  url("http://www.wallmaya.com/wp-content/uploads/2016/03/photography-wallpaper-pinterest-stock-picture.jpg")center/cover fixed no-repeat;
+}
+
+.item-2 {
+  background: linear-gradient(rgba(85, 85, 85, 0.7), rgba(85, 85, 85, 0.7)), url("https://pbs.twimg.com/media/DEyoieVXoAEMXhd.jpg") center/cover fixed no-repeat;
+}
+
+.item-3 {
+  background: linear-gradient(rgba(85, 85, 85, 0.7), rgba(85, 85, 85, 0.7)), url("https://s-media-cache-ak0.pinimg.com/originals/a3/27/fa/a327fa072fe49585fec47c1c4dea5cb4.png") center/cover fixed no-repeat;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.banner-btn {
+	color: #f1fffa;
+	border: 2px solid #f1fffa;
+	transition: all 1s;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .banner-btn:hover {
+	color: #643e59;
+	background: #f1fffa;
+	border-color: #f1fffa;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  
+  }
+
+  /* About */
+
+
+  .border-under:after {
+    display: block;
+    height: 2px;
+    background-color:  rgb(182, 136, 136);
+    content: " ";
+    width: 70px;
+    margin: 0 auto;
+	margin-top: 20px;
+  }
+
+  .btn-outline {
+	color: #643e59; 
+    background-color: transparent;
+    background-image: none;
+    border-color: #643e59;
+}
+
+.btn-outline:hover {
+    color: #212529;
+    background-color: #643e59; 
+    border-color: #643e59;
+}
+
+/* Skills*/
+
+.bg-skills {
+	min-height: 50vh;
+  background: linear-gradient(rgba(85, 85, 85, 0.7), rgba(85, 85, 85, 0.7)), url("https://s-media-cache-ak0.pinimg.com/originals/f7/53/35/f75335dccf25135f926e83441c8ffb8d.jpg")center/cover fixed no-repeat;
+	clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+}
+
+.skills{
+	background: #b8b8b8;
+}
+
+.about-progress {
+	background: linear-gradient(rgba(53, 53, 53, 0.7), rgba(53, 53, 53, 0.7)), url("https://i.pinimg.com/736x/c1/28/7d/c1287d5e869f02ad2195001a3c27648e--backgrounds-wallpapers-hd-wallpaper.jpg") fixed;
+	outline: 2px solid rgb(182, 136, 136);
+	outline-offset: 10px;
+}
+.progress-bar {
+	background-color: #be90b1;
+}
+
+/* Projects */
+
+.current-project {
+    position: relative;
+    min-height: 400px;
+}
+.current-photo {
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    transition: all 2s ease-in-out;
+}
+
+.current-photo:hover {
+	z-index: 70;
+	transform: scale(1.1);
+  }
+
+.current-photo.img-thumbnail {
+	background-color: rgb(116, 116, 116);
+}
+
+.current-photo-1 {
+    top: 0;
+    left: 10%;
+    transform: rotate(-15deg);
+    z-index: 20;
+}
+
+.current-photo-2 {
+    top: 0;
+    left: 46%;
+    transform: rotate(8deg);
+    z-index: 30;
+}
+
+.current-photo-3 {
+    top: 40%;
+    left: 3%;
+    transform: rotate(-5deg);
+}
+
+.current-photo-4 {
+    top: 41%;
+    left: 40%;
+    transform: rotate(38deg);
+}
+
+.img-container {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img-container img {
+	transition: transform 0.5s linear;
+	width: 100%;
+	height: 200px;
+}
+
+.img-container:hover img {
+	transform: scale(1.1);
+	opacity: 0.6;
+}
+ .project-current {
+	background-color: #666666;
+}
+
+
+/* Personal */
+
+.personal:first-child {
+	text-align: right;
+}
+
+.facts {
+	margin-bottom: 50px;
+}
+
+.facts div{
+	color: #643e59;
+	border: 2px solid #b96c3f;
+	display: inline-block;
+	border-radius: 50%;
+	height: 50px;
+	width: 55px;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 150%;
+	margin-right: 25px;
+}
+
+/* Contact */
+
+.contact{
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+	url("https://www.tomb-photo.com/wp-content/uploads/2017/07/photography-tumblr-wallpaper-pesquisa-google-random-with-regard-to-hd-photography-wallpaper-tumblr.jpg")center/cover fixed no-repeat;
+}
