@@ -225,31 +225,6 @@ i.fa-arrow-down.grey,i.fa-close.grey{
 	background-color: #666666;
 }
 
-
-/* Personal */
-
-.personal:first-child {
-	text-align: right;
-}
-
-.facts {
-	margin-bottom: 50px;
-}
-
-.facts div{
-	color: #643e59;
-	border: 2px solid #b96c3f;
-	display: inline-block;
-	border-radius: 50%;
-	height: 50px;
-	width: 55px;
-	text-align: center;
-	padding: 5px;
-	float: left;
-	font-size: 150%;
-	margin-right: 25px;
-}
-
 /* Contact */
 
 .contact{
